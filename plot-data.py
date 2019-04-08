@@ -47,13 +47,13 @@ lon = 180. - 15./60. * mins_utc
 lon = recircle(lon, 360)
 lon = math.radians(lon)
 # This works correctly, but is commented out to test if it works with the above recircle line as well.
-lonold = 180. - 15./60. * mins_utc
-if lonold > 180:
-	lonold -= 360.
-if lonold < -180:
-	lonold += 360.
-lonold = math.radians(lonold)
-print("lon vs lonold", lon == lonold)
+#lonold = 180. - 15./60. * mins_utc
+#if lonold > 180:
+#	lonold -= 360.
+#if lonold < -180:
+#	lonold += 360.
+#lonold = math.radians(lonold)
+#print("lon vs lonold", lon == lonold)
 
 
 # Draw the terminator
@@ -98,4 +98,4 @@ for i in range(len(x)):
 		y1.append(y[i])
 canvas.scatter(x1, y1, c = (0.8, 0.8, 0.8),  s=2)
 
-fig.savefig('output_term.png', dpi='figure', format="png", transparent=True)
+fig.savefig('public/images/output_term.png', dpi='figure', format="png", transparent=True)
