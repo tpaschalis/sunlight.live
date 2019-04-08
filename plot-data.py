@@ -101,4 +101,4 @@ for i in range(len(x)):
 		y1.append(y[i])
 canvas.scatter(x1, y1, c = (0.8, 0.8, 0.8),  s=2)
 
-fig.savefig('public/images/output_term.png', dpi='figure', format="png", transparent=True)
+fig.savefig('/home/pasta/Workspace/sunlight.live/public/images/output_term.png', dpi='figure', format="png", transparent=True)
