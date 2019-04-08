@@ -1,4 +1,5 @@
 import sys
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import math
@@ -17,6 +18,8 @@ def recircle(n, off):
 			n -= off
 	return n
 
+matplotlib.use('Agg')			# Use a backend that doesn't display to the user, so the code can run in the background batch. 
+								#Comment out the line for development.
 fig = plt.figure()
 fig.set_size_inches(24,12)		# World map will be drawn on a (20,10) inch grid, w/ (2,1) margin on each side
 fig.set_dpi(300)				# Setting the DPI too low results in render artifacts between dots
