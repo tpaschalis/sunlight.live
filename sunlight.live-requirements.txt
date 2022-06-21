@@ -9,7 +9,7 @@ geopandas==0.4.1
 kiwisolver==1.0.1
 matplotlib==3.0.3
 munch==2.3.2
-numpy==1.16.2
+numpy==1.22.0
 pandas==0.24.2
 parse==1.11.1
 Pillow==6.2.0
